@@ -4,6 +4,7 @@ import Home from './home';
 import QuoteApp from './QuoteApp';
 import Contact from './contact';
 import CountryList from './countries';
+import CurrencyConverter from './Convertor';
 
 // 1. Oddiy komponentlar (saxifalar)
 // const Home =()=> <h2>Bosh sahifa</h2>;
@@ -18,6 +19,7 @@ function App(){
       <Link to='/home' style={{marginRight:'10px'}}>Home</Link>
       <Link to='/about' style={{marginRight:'10px'}}>My projects</Link>
       <Link to='/country' style={{marginRight:'10px'}}>Countries</Link>
+      <Link to="/cc" style={{marginRight:'10px'}}>Currency</Link>
       <Link to='men'>About me</Link>
     </nav>
     <div style={{padding:'20px'}}>
@@ -26,6 +28,7 @@ function App(){
         <Route path='/about' element={<QuoteApp />}></Route>
         <Route path='/country' element={<CountryList/>}></Route>
         <Route path='/men' element={<Homepage />}></Route>
+        <Route path='/cc' element={<CurrencyConverter/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
