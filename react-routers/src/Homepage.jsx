@@ -1,7 +1,7 @@
 import MEN from "./assets/hhhh.avif"
 function Homepage(){
     return(
-        <div>
+        <div style={{backgroundColor:'#d3e3ff',borderRadius:'40px',width:'1000px',height:'500px',alignItems:'center',margin:'50px'}}>
             <div style={{marginRight:'600px'}}>
                 <img src={MEN} alt="" style={{width:'250px',borderRadius:'100%', marginTop:'100px'}}/>
             </div>

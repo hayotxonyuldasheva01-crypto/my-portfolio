@@ -5,6 +5,8 @@ import QuoteApp from './QuoteApp';
 import Contact from './contact';
 import CountryList from './countries';
 import CurrencyConverter from './Convertor';
+import MovieSearch from './movieSearch';
+import LiveInput from './livestate';
 
 // 1. Oddiy komponentlar (saxifalar)
 // const Home =()=> <h2>Bosh sahifa</h2>;
@@ -20,13 +22,15 @@ function App(){
       <Link to='/about' style={{marginRight:'10px'}}>My projects</Link>
       <Link to='/country' style={{marginRight:'10px'}}>Countries</Link>
       <Link to="/cc" style={{marginRight:'10px'}}>Currency</Link>
+      <Link to='/mm' style={{marginRight:'10px'}}>Movies</Link>
       <Link to='men'>About me</Link>
     </nav>
     <div style={{padding:'20px'}}>
       <Routes>
-        <Route path='/home' element={<Home />} ></Route>
+        <Route path='/home' element={<LiveInput/>} ></Route>
         <Route path='/about' element={<QuoteApp />}></Route>
         <Route path='/country' element={<CountryList/>}></Route>
+        <Route path='/mm' element={<MovieSearch/>}></Route>
         <Route path='/men' element={<Homepage />}></Route>
         <Route path='/cc' element={<CurrencyConverter/>}></Route>
       </Routes>

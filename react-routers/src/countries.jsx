@@ -46,7 +46,7 @@ const CountryList=()=>{
     return(
         <div style={{padding:"20px", fontfamily:'Arial'}}>
             <div style={{display:'flex', justifyContent:'space-around'}}>
-                <h1 style={{textAlign:'center'}}>Davlatlar Ma'lumotnomasi</h1>
+                <h1 style={{textAlign:'center',color:'#fff'}}>Davlatlar Ma'lumotnomasi</h1>
 
                 <input type="text" onChange={(e) => setSearch(e.target.value)} />
 

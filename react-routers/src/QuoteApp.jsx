@@ -42,7 +42,7 @@ function QuoteApp() {
 
   return (
     <div style={{maxWidth:"600px", margin:'50px auto', textAlign:"center"}}>
-      <h1>Kun Hikmati</h1>
+      <h1 style={{color:'#fff'}}>Kun Hikmati</h1>
 
       {loading && <p>Loading....</p>}
 
