@@ -48,14 +48,14 @@ function CurrencyConverter(){
                 <div style={{flex:1}}>
                     <label>Dan:</label>
                     <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)} style={{width:'100%', padding:'10px', borderRadius:'5px'}}>
-                        {rates.map(r => <option key={r.Ccy} valur>{r.Ccy} - {r.CcyNm_UZ}</option>)}
+                        {rates.map(r => <option key={r.Ccy} value={r.Ccy}>{r.Ccy} - {r.CcyNm_UZ}</option>)}
                     </select>
                 </div>
 
                 <div style={{flex:1}}>
                     <label>Ga:</label>
-                    <select  value={ToCurrency} onChange={(e) => setToCurrency(e.target.value)} style={{width:'100%', padding:'10px', borderRadius:'5px'}}>
-                        {rates.map(r => <option key={r.Ccy} valur>{r.Ccy} - {r.CcyNm_UZ}</option>)}
+                    <select  value={toCurrency} onChange={(e) => setToCurrency(e.target.value)} style={{width:'100%', padding:'10px', borderRadius:'5px'}}>
+                        {rates.map(r => <option key={r.Ccy} value={r.Ccy}>{r.Ccy} - {r.CcyNm_UZ}</option>)}
                     </select>
                 </div>
             </div>
@@ -63,7 +63,7 @@ function CurrencyConverter(){
             <div style={{marginTop:'30px', textAlign:'center', padding:'20px', background:'#fff', borderRadius:'10px'}}>
                 <h3 style={{margin:0}}>Natija:</h3>
                 <p style={{fontSize:'24px', fontWeight:'bold', color:'#2ecc71'}}>
-                    {amount}{fromCurrency} = {result} {ToCurrency}
+                    {amount}{fromCurrency} = {result} {toCurrency}
                 </p>
             </div>
         </div>
