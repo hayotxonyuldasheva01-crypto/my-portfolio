@@ -1,4 +1,5 @@
 import MEN from "./assets/hhhh.avif"
+import "./homepage.css"
 function Homepage(){
     return(
         <div style={{backgroundColor:'#d3e3ff',borderRadius:'40px',width:'1000px',height:'500px',alignItems:'center',margin:'50px'}}>
@@ -16,7 +17,7 @@ function Homepage(){
                     <h3>💼 Systems Engineer at Google</h3>
                     <h3>📧 hayotxonyuldasheva01@gmail.com</h3>
                 </div>
-                <div id="icon" style={{marginRight:'20px'}}>
+                <div id="icon" style={{marginLeft:'150px',width:'300px', justifyContent:'space-around', display:'flex',fontSize:'30px'}}>
                     <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
